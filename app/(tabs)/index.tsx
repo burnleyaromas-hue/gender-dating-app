@@ -2,44 +2,65 @@ import { ScrollView, Text, View, TouchableOpacity } from "react-native";
 
 import { ScreenContainer } from "@/components/screen-container";
 
-/**
- * Home Screen - NativeWind Example
- *
- * This template uses NativeWind (Tailwind CSS for React Native).
- * You can use familiar Tailwind classes directly in className props.
- *
- * Key patterns:
- * - Use `className` instead of `style` for most styling
- * - Theme colors: use tokens directly (bg-background, text-foreground, bg-primary, etc.); no dark: prefix needed
- * - Responsive: standard Tailwind breakpoints work on web
- * - Custom colors defined in tailwind.config.js
- */
 export default function HomeScreen() {
   return (
     <ScreenContainer className="p-6">
       <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
-        <View className="flex-1 gap-8">
+        <View className="flex-1 gap-8 justify-center">
           {/* Hero Section */}
-          <View className="items-center gap-2">
-            <Text className="text-4xl font-bold text-foreground">Welcome</Text>
+          <View className="items-center gap-4">
+            <Text className="text-5xl font-bold text-primary">Gender</Text>
+            <Text className="text-2xl font-bold text-foreground">Conecta con mujeres cerca de ti</Text>
             <Text className="text-base text-muted text-center">
-              Edit app/(tabs)/index.tsx to get started
+              Descubre, conecta y encuentra tu próxima conexión
             </Text>
           </View>
 
-          {/* Example Card */}
-          <View className="w-full max-w-sm self-center bg-surface rounded-2xl p-6 shadow-sm border border-border">
-            <Text className="text-lg font-semibold text-foreground mb-2">NativeWind Ready</Text>
-            <Text className="text-sm text-muted leading-relaxed">
-              Use Tailwind CSS classes directly in your React Native components.
-            </Text>
+          {/* Feature Cards */}
+          <View className="gap-4">
+            <View className="bg-surface rounded-2xl p-6 border border-border">
+              <View className="flex-row items-start gap-4">
+                <View className="w-12 h-12 bg-primary/20 rounded-full items-center justify-center">
+                  <Text className="text-2xl">❤️</Text>
+                </View>
+                <View className="flex-1">
+                  <Text className="text-lg font-semibold text-foreground mb-1">Descubre</Text>
+                  <Text className="text-sm text-muted">Encuentra mujeres interesantes cerca de ti</Text>
+                </View>
+              </View>
+            </View>
+
+            <View className="bg-surface rounded-2xl p-6 border border-border">
+              <View className="flex-row items-start gap-4">
+                <View className="w-12 h-12 bg-primary/20 rounded-full items-center justify-center">
+                  <Text className="text-2xl">💬</Text>
+                </View>
+                <View className="flex-1">
+                  <Text className="text-lg font-semibold text-foreground mb-1">Conecta</Text>
+                  <Text className="text-sm text-muted">Chatea con tus matches en tiempo real</Text>
+                </View>
+              </View>
+            </View>
+
+            <View className="bg-surface rounded-2xl p-6 border border-border">
+              <View className="flex-row items-start gap-4">
+                <View className="w-12 h-12 bg-primary/20 rounded-full items-center justify-center">
+                  <Text className="text-2xl">🔒</Text>
+                </View>
+                <View className="flex-1">
+                  <Text className="text-lg font-semibold text-foreground mb-1">Seguro</Text>
+                  <Text className="text-sm text-muted">Tu privacidad y seguridad son prioritarias</Text>
+                </View>
+              </View>
+            </View>
           </View>
 
-          {/* Example Button */}
-          <View className="items-center">
-            <TouchableOpacity className="bg-primary px-6 py-3 rounded-full active:opacity-80">
-              <Text className="text-background font-semibold">Get Started</Text>
+          {/* CTA Button */}
+          <View className="items-center gap-2">
+            <TouchableOpacity className="bg-primary px-8 py-4 rounded-full w-full items-center active:opacity-80">
+              <Text className="text-white font-bold text-lg">Comenzar a Explorar</Text>
             </TouchableOpacity>
+            <Text className="text-xs text-muted">Desliza a Descubre para empezar</Text>
           </View>
         </View>
       </ScrollView>
