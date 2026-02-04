@@ -17,6 +17,7 @@ const MAPPING = {
   "house.fill": "home",
   "heart.fill": "favorite",
   "message.fill": "mail",
+  "photo.fill": "image",
   "person.fill": "person",
   "paperplane.fill": "send",
   "chevron.left.forwardslash.chevron.right": "code",
