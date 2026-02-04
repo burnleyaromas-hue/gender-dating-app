@@ -1,0 +1,9 @@
+{
+  "query": "DROP TABLE IF EXISTS blockedUsers; DROP TABLE IF EXISTS reports; DROP TABLE IF EXISTS messages; DROP TABLE IF EXISTS matches; DROP TABLE IF EXISTS likes; DROP TABLE IF EXISTS userPhotos; DROP TABLE IF EXISTS userPreferences; DROP TABLE IF EXISTS userProfiles;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3fH5d2CdevfV1UW.root --database 5fn78dmJ2F3nznyob8qoRi --execute DROP TABLE IF EXISTS blockedUsers; DROP TABLE IF EXISTS reports; DROP TABLE IF EXISTS messages; DROP TABLE IF EXISTS matches; DROP TABLE IF EXISTS likes; DROP TABLE IF EXISTS userPhotos; DROP TABLE IF EXISTS userPreferences; DROP TABLE IF EXISTS userProfiles;",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 4842
+}
